@@ -1,0 +1,83 @@
+#by Rusliak
+
+
+#Для работы программы,необходимо установить библиотеку PyQt5 - pip install pyqt5
+#For the program to work, you need to install the library PyQt5 - pip install pyqt5
+
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+import sys
+
+def runButton():
+    print('У меня тоже нет, закатай губу')
+
+def runButton2():
+    print('Незнаю, я всего лишь программа. Я незнаю тебя')
+
+def runButton3():
+    print('Дом')
+
+def runButton4():
+    print('Мать, а если нет - ты плохой человек')
+
+def runButton5():
+    print('Python')
+
+
+def mainApp():
+    app = QApplication(sys.argv)
+    window = QMainWindow()
+
+    window.setWindowTitle('КНОПКИ/BUTTONS')
+    window.setGeometry(500, 100, 1000, 800)
+
+    kek = QtWidgets.QPushButton(window)
+    kek.move(40, 40)
+    kek.setText('Хочешь чебурек?')
+    kek.setFixedWidth(300)
+    kek.clicked.connect(runButton)
+
+    chebyr = QtWidgets.QPushButton(window)
+    chebyr.move(40, 100)
+    chebyr.setText('Узнай, кто ты?')
+    chebyr.setFixedWidth(300)
+    chebyr.clicked.connect(runButton2)
+
+    dom = QtWidgets.QPushButton(window)
+    dom.move(40, 160)
+    dom.setText('Какое лучшее место в мире?')
+    dom.setFixedWidth(300)
+    dom.clicked.connect(runButton3)
+
+    lovek = QtWidgets.QPushButton(window)
+    lovek.move(40, 220)
+    lovek.setText('Кто лучший человек на свете?')
+    lovek.setFixedWidth(300)
+    lovek.clicked.connect(runButton4)
+
+    python = QtWidgets.QPushButton(window)
+    python.move(40, 270)
+    python.setText('Какой самый лёгкий язык-програмирования?')
+    python.setFixedWidth(300)
+    python.clicked.connect(runButton5)
+
+    window.show()
+    sys.exit(app.exec_())
+
+runButton5()
+runButton4()
+runButton3()
+runButton2()
+runButton()
+mainApp()
+
+#by Rusliak
+#This code is created on Python
+#When you press the button, you get an answer, sometimes funny
+#I will be releasing new buttons, with updates
+
+#создано Rusliak
+#Этот код создан на Python
+#Когда нажимаешь на кнопку - получаешь ответ, иногда забавный
+#Я буду выпускать новые кнопки, с обновлениями
