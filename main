@@ -2,6 +2,7 @@
 
 
 #Для работы программы,необходимо установить библиотеку PyQt5 - pip install pyqt5
+
 #For the program to work, you need to install the library PyQt5 - pip install pyqt5
 
 from PyQt5 import QtWidgets
@@ -10,19 +11,19 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 import sys
 
 def runButton():
-    print('У меня тоже нет, закатай губу')
+    print('У меня тоже нет, закатай губу/I don't either, roll up your lip')
 
 def runButton2():
-    print('Незнаю, я всего лишь программа. Я незнаю тебя')
+    print('Незнаю, я всего лишь программа. Я незнаю тебя/I don't know, I'm just a program. I do not know you')
 
 def runButton3():
-    print('Дом')
+    print('Дом/House')
 
 def runButton4():
-    print('Мать, а если нет - ты плохой человек')
+    print('Мать, а если нет - ты плохой человек/Mother, and if no - you are a bad person')
 
 def runButton5():
-    print('Python')
+    print('Все, я просто кроме Python ничего незнаю. Я просто программа/That's it, I just don't know anything except Python. I'm just a program')
 
 
 def mainApp():
@@ -30,35 +31,35 @@ def mainApp():
     window = QMainWindow()
 
     window.setWindowTitle('КНОПКИ/BUTTONS')
-    window.setGeometry(500, 100, 1000, 800)
+    window.setGeometry(500, 100, 1000, 5800)
 
     kek = QtWidgets.QPushButton(window)
     kek.move(40, 40)
-    kek.setText('Хочешь чебурек?')
+    kek.setText('Хочешь чебурек?/Do you want a cake?')
     kek.setFixedWidth(300)
     kek.clicked.connect(runButton)
 
     chebyr = QtWidgets.QPushButton(window)
     chebyr.move(40, 100)
-    chebyr.setText('Узнай, кто ты?')
+    chebyr.setText('Узнай, кто ты?/Find out who you are?')
     chebyr.setFixedWidth(300)
     chebyr.clicked.connect(runButton2)
 
     dom = QtWidgets.QPushButton(window)
     dom.move(40, 160)
-    dom.setText('Какое лучшее место в мире?')
+    dom.setText('Какое лучшее место в мире?/What is the best place in the world?')
     dom.setFixedWidth(300)
     dom.clicked.connect(runButton3)
 
     lovek = QtWidgets.QPushButton(window)
     lovek.move(40, 220)
-    lovek.setText('Кто лучший человек на свете?')
+    lovek.setText('Кто лучший человек на свете?/Who is the best person in the world?')
     lovek.setFixedWidth(300)
     lovek.clicked.connect(runButton4)
 
     python = QtWidgets.QPushButton(window)
     python.move(40, 270)
-    python.setText('Какой самый лёгкий язык-програмирования?')
+    python.setText('Какой самый лучший язык програмирования?/What is the best programming language?')
     python.setFixedWidth(300)
     python.clicked.connect(runButton5)
 
@@ -81,3 +82,5 @@ mainApp()
 #Этот код создан на Python
 #Когда нажимаешь на кнопку - получаешь ответ, иногда забавный
 #Я буду выпускать новые кнопки, с обновлениями
+
+#BETA 0.2
