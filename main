@@ -5,6 +5,8 @@
 
 #For the program to work, you need to install the library PyQt5 - pip install pyqt5
 
+#Подробная информация о версиях внизу/Version details below
+
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
@@ -83,4 +85,12 @@ mainApp()
 #Когда нажимаешь на кнопку - получаешь ответ, иногда забавный
 #Я буду выпускать новые кнопки, с обновлениями
 
-#BETA 0.2
+#BETA 0.1
+#Создан код про кнопки, их 5
+#Created a code about buttons, there are 5 of them
+#------------------------------------------------
+#BETA 0.2 (Эта версия/This version)
+#Добавлен Англиский Язык
+#Added English Language
+#Исправлены диалоги
+#Fixed dialogues
